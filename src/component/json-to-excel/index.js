@@ -1,4 +1,4 @@
-import  saveAs  from "file-saver";
+import saveAs from "file-saver";
 import XLSX from "xlsx";
 
 const EXCEL_TYPE =
@@ -23,7 +23,7 @@ export const JsonToExcel = ({ data, title, fileName, btnClassName }) => {
   return (
     <div>
       <button className={btnClassName} onClick={exportToExcel}>
-        {title}
+        {title || "Download"}
       </button>
     </div>
   );

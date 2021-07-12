@@ -1,15 +1,22 @@
 {
   "name": "react-json-to-excel",
   "version": "1.0.0",
-  "description": "",
+  "description": "Download the json as excel",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "build-lib": "rollup -c"
+  },  
+  "author": {
+    "name": "yedidi manikanta",
+    "email": "maniyedidi@gmail.com"
   },
-  "author": "maniyedidi",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/maniyedidi/react-json-to-excel"
+  },
   "license": "MIT",
   "dependencies": {
     "file-saver": "^2.0.5",
@@ -34,5 +41,15 @@
   "peerDependencies": {
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
-  }
+  },
+  "keywords": [
+    "react",
+    "json",
+    "excel",
+    "download excel",
+    "download json",
+    "react json to excel",
+    "json to excel "    
+  ]
+
 }
