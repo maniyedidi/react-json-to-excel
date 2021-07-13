@@ -1,6 +1,6 @@
 {
   "name": "react-json-to-excel",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Download the json as excel",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
