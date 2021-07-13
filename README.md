@@ -74,7 +74,7 @@ class SmapleComponent2 extends Component {
 ```
 
 ![Screenshot](excel.png)
-![Screenshot](smaple.png)
+![Screenshot](sample.png)
 
 ## PROPTYPES
 
