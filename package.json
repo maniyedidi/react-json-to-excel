@@ -19,9 +19,7 @@
     "url": "https://github.com/maniyedidi/react-json-to-excel"
   },
   "license": "MIT",
-  "dependencies": {
-    "file-saver": "^2.0.5"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.14.6",
     "@rollup/plugin-node-resolve": "^13.0.0",
@@ -36,11 +34,13 @@
     "rollup-plugin-babel": "^4.4.0",
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.0",
     "rollup-plugin-terser": "^7.0.2"
   },
   "peerDependencies": {
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "file-saver": "^2.0.5"
   },
   "keywords": [
     "react",

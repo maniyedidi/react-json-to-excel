@@ -27,6 +27,7 @@ class SmapleComponent extends Component {
         title="Download as Excel"
         data={[{ test: "test" }]}
         fileName="sample-file"
+        btnClassName="custom-classname"
       />
     );
   }
@@ -73,14 +74,16 @@ class SmapleComponent2 extends Component {
 ```
 
 ![Screenshot](excel.png)
+![Screenshot](smaple.png)
 
 ## PROPTYPES
 
-| Prop         | Type   | Default                                                  |
+| Prop         | Type   | Info                                                     |
 | ------------ | ------ | -------------------------------------------------------- |
 | title        | String | name of the button                                       |
 | btnClassName | String | class name added to the the button for css customization |
 | data         | Array  | array of objects                                         |
 | fileName     | String | download file name                                       |
+| btnColor     | String | color of button defatlt to #4CAF50                       |
 
 # react-json-to-excel
