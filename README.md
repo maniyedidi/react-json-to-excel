@@ -1,4 +1,4 @@
-# React Read More Less
+# React json to excel
 
 [![NPM](https://nodei.co/npm/react-json-to-excel.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/react-json-to-excel/)
 [![npm version](https://badge.fury.io/js/react-json-to-excel.svg)]
@@ -11,6 +11,11 @@ npm install react-json-to-excel --save
 ```
 
 ## Usage
+```
+Add the script file in index.html
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.2/xlsx.full.min.js"></script>
+
+```
 
 ```js
 import { JsonToExcel } from "react-json-to-excel";
