@@ -72,6 +72,10 @@ class SmapleComponent2 extends Component {
   }
 }
 ```
+````
+[Example](https://github.com/maniyedidi/react-json-to-excel/tree/master/src/stories)
+````
+
 
 ![Screenshot](excel.png)
 ![Screenshot](sample.png)
