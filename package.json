@@ -1,6 +1,6 @@
 {
   "name": "react-json-to-excel",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Download the json as excel",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
@@ -40,7 +40,8 @@
   "peerDependencies": {
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "file-saver": "^2.0.5"
+    "file-saver": "^2.0.5",
+    "xlsx": "^0.18.5"
   },
   "keywords": [
     "react",

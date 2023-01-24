@@ -10,12 +10,7 @@ npm install react-json-to-excel --save
 
 ```
 
-## Usage
-```
-Add the script file in index.html
-<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.2/xlsx.full.min.js"></script>
-
-```
+## Using Button Component
 
 ```js
 import { JsonToExcel } from "react-json-to-excel";
@@ -71,6 +66,31 @@ class SmapleComponent2 extends Component {
     );
   }
 }
+```
+
+## Using Button Component
+
+```
+import { exportToExcel } from 'react-json-to-excel';
+
+  const samplejson2 = [
+    { name: 'name01', age: '20', sex: 'M' },
+    { name: 'name02', age: '22', sex: 'F' },
+    { name: 'name03', age: '20', sex: 'M' },
+  ];
+
+class SmapleComponent2 extends Component {
+
+  render() {
+    return (
+     <button onClick={() => exportToExcel(samplejson2, 'downloadfilename')}>        
+        Download using method
+      </button>
+    );
+  }
+}
+
+
 ```
 
 [Example](https://github.com/maniyedidi/react-json-to-excel/tree/master/src/stories)
