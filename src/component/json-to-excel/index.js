@@ -1,6 +1,6 @@
 import React from 'react';
 import saveAs from 'file-saver';
-import * as XLSX from "xlsx";
+import * as XLSX from 'xlsx';
 import '../../styles.css';
 
 const EXCEL_TYPE =
@@ -13,26 +13,13 @@ export const JsonToExcel = ({
   fileName,
   btnClassName,
   btnColor = '#4CAF50',
+  multipleSheets,
 }) => {
-  const exportToExcel = () => {
-    const ws = XLSX.utils.json_to_sheet(data);
-    const wb = {
-      Sheets: {
-        data: ws,
-      },
-      SheetNames: ['data'],
-    };
-
-    const eb = XLSX.write(wb, { bookType: 'xlsx', type: 'array' });
-    const blob = new Blob([eb], { type: EXCEL_TYPE });
-    saveAs(blob, fileName + EXCEL_EXTENSION);
-  };
-
   return (
     <div>
       <button
         className={`${btnClassName} download-button`}
-        onClick={exportToExcel}
+        onClick={() => exportToExcel(data, fileName, multipleSheets)}
         style={{
           background: btnColor,
         }}

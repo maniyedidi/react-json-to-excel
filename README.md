@@ -7,7 +7,17 @@
 
 ```
 npm install react-json-to-excel --save
+```
 
+
+## Peer modules
+
+```
+npm install file-saver xlsx --save
+```
+
+```
+npm install react-json-to-excel --save
 ```
 
 ## Using Button Component

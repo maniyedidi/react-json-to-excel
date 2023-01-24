@@ -21,6 +21,26 @@ stories.add('App', () => {
     { name: 'name02', age: '22', sex: 'F' },
     { name: 'name03', age: '20', sex: 'M' },
   ];
+
+  const multiSheetData = [
+    {
+      sheetName: 'sheet1',
+      details: [
+        { name: 'name01', age: '20', sex: 'M' },
+        { name: 'name02', age: '22', sex: 'F' },
+        { name: 'name03', age: '20', sex: 'M' },
+      ],
+    },
+    {
+      sheetName: 'sheet2',
+      details: [
+        { name: 'name01', age: '20', sex: 'M' },
+        { name: 'name02', age: '22', sex: 'F' },
+        { name: 'name03', age: '20', sex: 'M' },
+      ],
+    },
+  ];
+
   return (
     <>
       <JsonToExcel
@@ -37,8 +57,13 @@ stories.add('App', () => {
         btnColor='red'
       />
       <br></br>
-      <button onClick={() => exportToExcel(data1, 'name')}>        
+      <button onClick={() => exportToExcel(data1, 'name')}>
         Download using method
+      </button>
+      <br></br>
+
+      <button onClick={() => exportToExcel(multiSheetData, 'name', true)}>
+        Multi Sheet Download using method
       </button>
     </>
   );
