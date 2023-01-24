@@ -68,7 +68,7 @@ class SmapleComponent2 extends Component {
 }
 ```
 
-## Using Button Component
+## Using exportToExcel Method
 
 ```
 import { exportToExcel } from 'react-json-to-excel';
@@ -90,6 +90,45 @@ class SmapleComponent2 extends Component {
   }
 }
 
+```
+
+## Using exportToExcel Method For Multiple sheets
+- Data object should be as below 
+- exportToExcel(data, 'downloadfilename', true ) - should pass true
+
+```
+[{
+  sheetName:"sheet1",
+  details:[{ name: 'name01', age: '20', sex: 'M' },
+    { name: 'name02', age: '22', sex: 'F' },
+    { name: 'name03', age: '20', sex: 'M' }]
+},{
+  sheetName:"sheet2",
+  details:[{ name: 'name01', age: '20', sex: 'M' },
+    { name: 'name02', age: '22', sex: 'F' },
+    { name: 'name03', age: '20', sex: 'M' }]
+}]
+```
+
+```
+import { exportToExcel } from 'react-json-to-excel';
+
+  const samplejson2 = [
+    { name: 'name01', age: '20', sex: 'M' },
+    { name: 'name02', age: '22', sex: 'F' },
+    { name: 'name03', age: '20', sex: 'M' },
+  ];
+
+class SmapleComponent2 extends Component {
+
+  render() {
+    return (
+     <button onClick={() => exportToExcel(samplejson2, 'downloadfilename', true )}>        
+        Download using method
+      </button>
+    );
+  }
+}
 
 ```
 
