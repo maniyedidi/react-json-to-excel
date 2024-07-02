@@ -1,6 +1,6 @@
 {
   "name": "react-json-to-excel",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Download the json as excel",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
@@ -19,7 +19,6 @@
     "url": "https://github.com/maniyedidi/react-json-to-excel"
   },
   "license": "MIT",
-  "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.14.6",
     "@rollup/plugin-node-resolve": "^13.0.0",
@@ -28,8 +27,8 @@
     "@storybook/addon-links": "^6.3.4",
     "@storybook/react": "^6.3.4",
     "babel-loader": "^8.2.2",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "rollup": "^2.53.1",
     "rollup-plugin-babel": "^4.4.0",
     "rollup-plugin-commonjs": "^10.1.0",
@@ -38,9 +37,9 @@
     "rollup-plugin-terser": "^7.0.2"
   },
   "peerDependencies": {
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
     "file-saver": "^2.0.5",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "xlsx": "^0.18.5"
   },
   "keywords": [
