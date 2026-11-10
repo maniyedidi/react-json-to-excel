@@ -1,3 +1,4 @@
-module.exports = {
-  stories: ['../src/**/*.stories.js']
+export default {
+  stories: ['../src/**/*.stories.@(js|jsx)'],
+  framework: '@storybook/react-vite',
 };
