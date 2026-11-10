@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Overview
 
-`react-json-to-excel` is a small npm library exposing a React button (`JsonToExcel`) and a helper (`exportToExcel`) that convert JSON to an `.xlsx` download. All logic lives in [src/component/json-to-excel/index.js](src/component/json-to-excel/index.js); [src/index.js](src/index.js) just re-exports it.
+`react-json-to-excel` is a small npm library exposing a React button (`JsonToExcel`) and a helper (`exportToExcel`) that convert JSON to an `.xlsx` download. All logic lives in [src/component/json-to-excel/index.jsx](src/component/json-to-excel/index.jsx); [src/index.js](src/index.js) just re-exports it.
 
 ## Commands
 
