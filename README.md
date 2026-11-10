@@ -12,9 +12,22 @@ npm install react-json-to-excel --save
 
 ## Peer modules
 
+Supports React 18 and 19.
+
 ```
-npm install file-saver xlsx --save
+npm install file-saver --save
+npm install https://cdn.sheetjs.com/xlsx-0.20.3/xlsx-0.20.3.tgz --save
 ```
+
+The `xlsx` build on npm (0.18.5) has known advisories fixed only in SheetJS's own 0.20.x builds, so installing from the SheetJS CDN is recommended. 0.18.5 still works.
+
+## Migrating to 2.0.0
+
+- `file-saver`/`xlsx` remain peer dependencies; React peer range is now `^18 || ^19`.
+- CSS file removed: button styles are inline. `btnClassName` no longer renders `"undefined"` when omitted.
+- `fileName` defaults to `download`; `exportToExcel` throws a `TypeError` if `data` is not an array.
+- Multi-sheet names are sanitised (invalid characters replaced, max 31 chars, duplicates suffixed).
+- Extra props are passed through to the `<button>`.
 
 ```
 npm install react-json-to-excel --save
