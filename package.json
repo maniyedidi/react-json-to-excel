@@ -6,6 +6,7 @@
   "module": "dist/index.es.js",
   "exports": {
     ".": {
+      "types": "./dist/index.d.ts",
       "import": "./dist/index.es.js",
       "require": "./dist/index.js"
     }
@@ -18,7 +19,7 @@
     "test": "vitest run",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "build-lib": "rollup -c",
+    "build-lib": "rollup -c && cp src/index.d.ts dist/index.d.ts",
     "prepublishOnly": "npm test && npm run build-lib"
   },
   "author": {
@@ -54,14 +55,17 @@
     "@storybook/react-vite": "^10.6.6",
     "@testing-library/dom": "^10.4.2",
     "@testing-library/react": "^16.3.3",
+    "@types/react": "^19.3.0",
     "file-saver": "^2.0.5",
     "jsdom": "^29.1.1",
     "react": "^19.3.1",
     "react-dom": "^19.3.1",
     "rollup": "^4.68.2",
     "storybook": "^10.6.6",
+    "typescript": "^7.0.2",
     "vite": "^8.3.7",
     "vitest": "^5.1.0",
     "xlsx": "https://cdn.sheetjs.com/xlsx-0.20.3/xlsx-0.20.3.tgz"
-  }
+  },
+  "types": "dist/index.d.ts"
 }
